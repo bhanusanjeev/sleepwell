@@ -1,19 +1,21 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Motive - SleepWell</title>
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
   <style>
     body {
       background: linear-gradient(135deg, #001f3f, #0074D9);
       color: white;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      padding-top: 100px;
+      min-height: 100vh;
     }
+
     .content-box {
       background: rgba(255, 255, 255, 0.07);
       backdrop-filter: blur(10px);
@@ -45,87 +47,65 @@
       line-height: 1.8;
       font-size: 1.1rem;
     }
-
-    .nav-link.active {
-      font-weight: bold;
-      color: #00d4ff !important;
-    }
-    /* Navbar styling */
-        .navbar {
-            background-color: #004d7a;
-            padding: 1rem;
-        }
-
-        .navbar-brand {
-            font-size: 1.8rem;
-            color: white;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .nav-link {
-            color: white;
-            font-size: 1rem;
-            margin-right: 1rem;
-        }
-
-        .nav-link:hover {
-            color: #00bcd4;
-        }
-         .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
   </style>
 </head>
+
 <body>
- <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="/index.php">SleepWell</a>
-            <div class="navbar-nav">
-                <a class="nav-link" href="index.php">Home</a>
-                <a class="nav-link" href="about.php">About the Developer</a>
-                <a class="nav-link" href="motive.php" active>Motive</a>
-                <a class="nav-link" href="importance.php">Importance</a>
-            </div>
-        </div>
-    </nav>
-  <div class="content-box">
-    <h2 class="text-center mb-4">The Motive Behind SleepWell</h2>
 
-    <p>
-      Sleep — it’s something we all need, yet something many neglect. I started *SleepWell* not just to build a web app, but to address a silent struggle millions face daily. Lack of proper sleep affects mental clarity, emotional stability, and overall health. I knew that even a simple tool offering empathy and guidance could make a difference.
-    </p>
+  <!-- SHARED NAVBAR -->
+  <?php include 'navbar.php'; ?>
 
-    
-    <p>
-      *SleepWell* is not just a sleep suggestion app. It’s a message that you are not alone. Whether you're a student overworking without rest, a professional running on caffeine, or a dreamer sacrificing sleep for your vision — this app is for you.
-    </p>
+  <!-- PAGE CONTENT -->
+  <div class="container mt-5 pt-4">
+    <div class="content-box">
+      <h2 class="text-center mb-4">The Motive Behind SleepWell</h2>
 
-    <p>
-      Every feature of this site — from the user-friendly UI to the categorized suggestions — was built to serve. I didn’t want fancy distractions. I wanted clarity. Clean design, soft animations, a relaxing feel — because even the website itself should feel like a breath of calm.
-    </p>
+      <p>
+        Sleep — it’s something we all need, yet something many neglect. I started
+        <strong>SleepWell</strong> not just to build a web app, but to address a silent
+        struggle millions face daily. Lack of proper sleep affects mental clarity,
+        emotional stability, and overall health. Even a simple tool offering empathy
+        and guidance can make a difference.
+      </p>
 
-    
-    <p>
-      I believe everyone deserves better sleep, better health, and better support. We all have ambitions, but without rest, even the biggest dreams fade. That’s why I made *SleepWell* — to be a little light in someone's dark night.
-    </p>
+      <p>
+        <strong>SleepWell</strong> is not just a sleep suggestion app. It’s a reminder
+        that you are not alone. Whether you're a student overworking without rest, a
+        professional running on caffeine, or a dreamer sacrificing sleep for ambition —
+        this app is for you.
+      </p>
 
-    <p>
-      The motive behind this project is deeply personal. It’s a digital footprint of my resilience, a gift to the world, and a mark of what’s possible when you don’t give up.
-    </p>
+      <p>
+        Every feature of this site — from the user-friendly UI to the categorized
+        suggestions — was built with intention. No distractions. Just clarity.
+        Soft animations, calm visuals, and a relaxing experience — because even a
+        website should feel like rest.
+      </p>
 
-    <p>
-      If this app helps even one person feel cared for, rested, and encouraged — then every sleepless night I spent coding it was worth it. 💙
-    </p>
+      <p>
+        I believe everyone deserves better sleep, better health, and better support.
+        Ambitions are important, but without rest, even the biggest dreams fade.
+        That’s why I built <strong>SleepWell</strong> — to be a small light in
+        someone’s dark night.
+      </p>
 
+      <p>
+        This project is deeply personal. It’s a digital footprint of resilience,
+        learning, and consistency — proof of what’s possible when you don’t give up.
+      </p>
 
-    <p class="text-center mt-2">
-      Keep dreaming. Keep coding. And never forget to SleepWell. 🛌✨
-    </p>
+      <p>
+        If this app helps even one person feel cared for, rested, and encouraged —
+        then every late night spent building it was worth it. 💙
+      </p>
+
+      <p class="text-center mt-3">
+        Keep dreaming. Keep coding. And never forget to SleepWell. 🛌✨
+      </p>
+    </div>
   </div>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

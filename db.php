@@ -7,11 +7,7 @@ $username   = $env["DB_USER"];
 $password   = $env["DB_PASS"];
 $database   = $env["DB_NAME"];
 
-$conn = mysqli_connect($servername, $username, $password, $database);
 
-if (!$conn) {
-    die("Database Connection Failed: " . mysqli_connect_error());
-}
 // Create a connection
 $conn = mysqli_connect($servername, $username, $password, $database);
 
